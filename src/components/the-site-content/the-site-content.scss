@@ -1,0 +1,15 @@
+.the-site-content {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: 991px) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+}

@@ -1,0 +1,94 @@
+.main-footer {
+  padding: 20px 0;
+  border-top: 2px solid #660000;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(max-width: 991px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    @media(max-width: 575px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__copyright {
+    font-family: 'PFdin Textpro Medium', sans-serif;
+    color: #000;
+    font-size: 13px;
+    letter-spacing: -0.4px;
+    margin-top: -28px;
+    margin-bottom: 10px;
+
+    @media(max-width: 991px) {
+      margin-top: 0;
+    }
+    
+    &-link {
+      text-decoration: none;
+      color: #000;
+      display: block;
+      margin-bottom: 3px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__callme {
+    margin-top: -22px;
+    display: flex;
+    align-items: center;
+    margin-left: -67px;
+    margin-bottom: 10px;
+
+    @media(max-width: 991px) {
+      margin-top: 0;
+      margin-left: 0;
+    }
+
+    &-phone {
+      font-family: 'PFdin Textpro Medium', sans-serif;
+      color: #000;
+      font-size: 24px;
+      text-decoration: none;
+      letter-spacing: -0.9px;
+      margin-left: 5px;
+      margin-top: 3px;
+    }
+  }
+
+  &__metric {
+    margin-top: 12px;
+
+    &-counters {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 11px;
+
+      @media(max-width: 575px) {
+        justify-content: center;
+      }
+    }
+  }
+
+  &__studio {
+    display: flex;
+    align-items: center;
+
+    &-title {
+      font-family: 'PFdin Textpro Light', sans-serif;
+      font-size: 12px;
+      color: #000;
+      letter-spacing: -0.2px;
+    }
+  }
+}

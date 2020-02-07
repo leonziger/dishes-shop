@@ -1,0 +1,49 @@
+.shop-basket {
+  border: 1px solid #a39f9f;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'PFdin Textpro Medium', sans-serif;
+  padding: 8px 15px;
+
+  &__icon {
+    align-self: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__goods {
+    color: #a3a0a1;
+    font-family: 'PFdin Textpro Light', sans-serif;
+    font-size: 12px;
+    padding-left: 17px;
+    margin-bottom: 10px;
+  }
+  &__admin {
+    color: #a3a0a1;
+    display: flex;
+    font-size: 12px;
+  }
+
+  &__registry {
+    padding-right: 5px;
+    color: #000;
+  }
+
+  &__entrance {
+    padding-left: 6px;
+    color: #000;
+  }
+
+  &__title {
+    color: #000;
+    font-size: 14px;
+    font-family: 'PFdin Textpro Bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.8px;
+    margin-bottom: 9px;
+    margin-left: 19px;
+  }
+}

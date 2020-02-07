@@ -1,0 +1,20 @@
+.the-button {
+  width: 36px;
+  height: 24px;
+  background-image: url(../images/search-button.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  min-height: 38px;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  transition: $delay;
+  margin-right: 4px;
+
+  &:hover {
+    opacity: .7;
+  }
+
+}

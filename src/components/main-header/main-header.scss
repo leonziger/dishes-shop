@@ -1,0 +1,176 @@
+.main-header {
+  margin-bottom: 13px;
+
+  &__top {
+    padding: 10px 0;
+    min-height: 118px;
+    display: flex;
+    align-items: center;
+
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @media(max-width: 480px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__logo {
+    display: block;
+    text-decoration: none;
+    margin-left: -4px;
+    order: 1;
+
+    @media(max-width: 991px) {
+      width: 50%;
+    }
+    @media(max-width: 480px) {
+      margin-bottom: 20px;
+      width: auto;
+    }
+
+    &-info {
+      color: #620006;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: 'PFdin Textpro Bold', sans-serif;
+      padding-left: 10px;
+    }
+
+    &-slogan {
+      text-transform: uppercase;
+      color: #a3a0a1;
+      padding-left: 21px;
+      padding-top: 2px;
+      letter-spacing: 0.2px;
+      font-family: 'PFdin Textpro Thin', sans-serif;
+    }
+  }
+
+  &__search-form {
+    padding: 9px 0;
+    order: 2;
+
+    @media(max-width: 991px) {
+      order: 4;
+    }
+  }
+
+  &__callme {
+    display: flex;
+    order: 3;
+
+    @media(max-width: 480px) {
+      margin-bottom: 10px;
+    }
+
+    &-info {
+      margin-left: 3px;
+    }
+    &-icon {
+      align-self: center;
+    }
+    &-slogan {
+      font-size: 12px;
+      font-family: 'PFdin Textpro Thin', sans-serif;
+      color: #a3a0a1;
+      letter-spacing: 0.5px;
+      margin-bottom: 3px;
+    }
+    &-number {
+      font-size: 18px;
+      font-family: 'PFdin Textpro Medium', sans-serif;
+      color: #000;
+      letter-spacing: -0.8px;
+      text-decoration: none;
+    }
+  }
+
+  &__shop-basket {
+    max-width: 188px;
+    width: 100%;
+    order: 4;
+
+    @media(max-width: 991px) {
+      order: 2;
+    }
+    @media(max-width: 480px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__bottom {
+    min-height: 91px;
+    background-image: url(../images/nav_bg.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    font-family: 'PFdin Textpro Bold', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: -13px;
+    margin-left: 54px;
+
+    @media(max-width: 1024px) {
+      margin-left: 0;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &-item {
+      padding: 3px 9px;
+      border-right: 1px solid white;
+      transition: 0.3s;
+
+      &:last-child {
+        border-right: 1px solid transparent;
+      }
+
+      @media(max-width: 991px) {
+        border-right: 1px solid transparent;
+      }
+
+      &:hover {
+        .main-header__nav-link {
+          color: #fff;
+
+          &:after {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+
+    &-link {
+      color: #000;
+      letter-spacing: -1px;
+      text-decoration: none;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        background-color: #000;
+        left: 2px;
+        right: 2px;
+        bottom: 0;
+      }
+    }
+  }
+}
